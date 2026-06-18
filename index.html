@@ -31,49 +31,16 @@
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
-    <div class="hero-media">
-      <img
-        src="images/hero.jpg"
-        alt="S|C Saber II Clipper und Saber Trimmer Set"
-        class="hero-img"
-        id="heroImg"
-        onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
-      />
-      <!-- Fallback wenn kein Bild -->
-      <div class="hero-fallback" id="heroFallback">
-        <div class="fallback-logo">S<span>|</span>C</div>
-        <div class="fallback-products">
-          <div class="fallback-device">
-            <div class="fallback-blade"></div>
-            <div class="fallback-body clipper-body">
-              <span>SABER II</span>
-              <small>DIGITAL BRUSHLESS</small>
-            </div>
-            <div class="fallback-base"><span>S|C</span></div>
-          </div>
-          <div class="fallback-device">
-            <div class="fallback-tblade"></div>
-            <div class="fallback-body trimmer-body">
-              <div class="hex-btn"></div>
-              <span>SABER</span>
-              <small>DIGITAL BRUSHLESS</small>
-            </div>
-            <div class="fallback-base"><span>S|C</span></div>
-          </div>
-        </div>
-        <p class="fallback-hint">Bild: <code>images/hero.jpg</code> hinzufügen</p>
-      </div>
-      <div class="hero-gradient"></div>
-    </div>
 
-    <div class="hero-text">
+    <!-- LEFT: Text -->
+    <div class="hero-left">
       <div class="hero-eyebrow">
         <span class="dot"></span>
         <span>StyleCraft Professional</span>
       </div>
-      <h1>CLIPPER&#8209;TRIMMER<br /><span class="gold">SET</span></h1>
+      <h1>CLIPPER&#8209;<br />TRIMMER<br /><span class="gold">SET</span></h1>
       <p class="hero-desc">
-        Zwei Maschinen. Ein System. Unbegrenzte Präzision.<br />
+        Zwei Maschinen. Ein System.<br />
         Digital Brushless Motoren — die Wahl der Profis.
       </p>
       <div class="hero-pills">
@@ -87,10 +54,26 @@
       </div>
     </div>
 
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
+    <!-- RIGHT: Real product photos -->
+    <div class="hero-right">
+      <div class="hero-products-wrap">
+        <div class="hero-product-item">
+          <span class="prod-label">SABER II</span>
+          <img src="images/clipper.png" alt="S|C Saber II Clipper" class="prod-img" />
+          <span class="prod-rpm gold-text">9.000 RPM</span>
+          <span class="prod-type">Clipper</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-product-item">
+          <span class="prod-label">SABER</span>
+          <img src="images/trimmer.png" alt="S|C Saber Trimmer" class="prod-img" />
+          <span class="prod-rpm blue-text">7.000 RPM</span>
+          <span class="prod-type">Trimmer</span>
+        </div>
+      </div>
+      <div class="hero-right-logo">S<span>|</span>C</div>
     </div>
+
   </section>
 
   <!-- ═══ KEYLINE STATS ═══ -->
@@ -130,68 +113,11 @@
 
     <!-- CLIPPER -->
     <div class="split-row">
-      <div class="split-visual clipper-visual reveal">
+      <div class="split-visual reveal">
         <div class="device-badge">Clipper</div>
         <div class="device-glow gold-glow"></div>
-        <div class="device-frame">
-          <svg viewBox="0 0 200 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="device-svg">
-            <!-- Blade housing -->
-            <rect x="25" y="8" width="150" height="32" rx="6" fill="#1c1c1c"/>
-            <rect x="30" y="13" width="140" height="15" rx="4" fill="#252525"/>
-            <!-- Blade teeth -->
-            <rect x="32" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="42" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="52" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="62" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="72" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="82" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="92" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="102" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="112" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="122" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="132" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="142" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="152" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <rect x="162" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
-            <!-- Motor window amber -->
-            <rect x="42" y="40" width="116" height="50" rx="8" fill="#7a5a0a" opacity="0.9"/>
-            <rect x="48" y="46" width="104" height="38" rx="6" fill="#c8a032" opacity="0.3"/>
-            <!-- Body -->
-            <rect x="30" y="90" width="140" height="230" rx="22" fill="url(#clipperGrad)"/>
-            <!-- Body highlight -->
-            <rect x="34" y="94" width="132" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
-            <rect x="38" y="94" width="60" height="222" rx="10" fill="rgba(255,255,255,0.04)"/>
-            <!-- Center emblem circle -->
-            <circle cx="100" cy="180" r="36" fill="rgba(0,0,0,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-            <!-- Saber II text -->
-            <text x="100" y="172" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="rgba(200,169,75,0.9)">SABER II</text>
-            <text x="100" y="185" text-anchor="middle" font-family="Inter" font-weight="500" font-size="7.5" fill="rgba(255,255,255,0.45)">DIGITAL BRUSHLESS</text>
-            <!-- S|C watermark -->
-            <text x="100" y="250" text-anchor="middle" font-family="Inter" font-weight="900" font-size="18" fill="rgba(200,169,75,0.25)" letter-spacing="3">S|C</text>
-            <!-- Taper lever -->
-            <rect x="16" y="215" width="16" height="50" rx="5" fill="#b0b0b0"/>
-            <rect x="17" y="238" width="14" height="7" rx="3.5" fill="#888"/>
-            <!-- LED row -->
-            <circle cx="86" cy="300" r="3" fill="#c8a94b"/>
-            <circle cx="96" cy="300" r="3" fill="#c8a94b" opacity="0.6"/>
-            <circle cx="106" cy="300" r="3" fill="#333"/>
-            <circle cx="116" cy="300" r="3" fill="#333"/>
-            <!-- Base -->
-            <ellipse cx="100" cy="335" rx="62" ry="26" fill="url(#baseGrad)"/>
-            <text x="100" y="339" text-anchor="middle" font-family="Inter" font-weight="900" font-size="13" fill="#fff" letter-spacing="2">S|C</text>
-            <defs>
-              <linearGradient id="clipperGrad" x1="30" y1="90" x2="170" y2="320" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#f2f2f2"/>
-                <stop offset="100%" stop-color="#d8d8d8"/>
-              </linearGradient>
-              <linearGradient id="baseGrad" x1="38" y1="310" x2="162" y2="360" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#2a2a2a"/>
-                <stop offset="100%" stop-color="#111"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="rpm-badge gold-badge">9.000 RPM</div>
+        <img src="images/clipper.png" alt="S|C Saber II Clipper" class="product-photo" />
+        <div class="rpm-badge gold-text">9.000 RPM</div>
       </div>
 
       <div class="split-specs reveal reveal-right">
@@ -331,64 +257,11 @@
         </div>
       </div>
 
-      <div class="split-visual trimmer-visual reveal reveal-right">
+      <div class="split-visual reveal reveal-right">
         <div class="device-badge blue-badge">Trimmer</div>
         <div class="device-glow blue-glow"></div>
-        <div class="device-frame">
-          <svg viewBox="0 0 160 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="device-svg trimmer-svg">
-            <!-- T-Blade wide top -->
-            <rect x="5" y="8" width="150" height="28" rx="5" fill="#1c1c1c"/>
-            <rect x="10" y="13" width="140" height="12" rx="3" fill="#252525"/>
-            <!-- T-Blade teeth -->
-            <rect x="11" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="19" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="27" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="35" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="43" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="51" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="59" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="67" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="75" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="83" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="91" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="99" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="107" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="115" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="123" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="131" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <rect x="139" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
-            <!-- Neck connector -->
-            <rect x="45" y="36" width="70" height="22" rx="4" fill="#1c1c1c"/>
-            <!-- Body -->
-            <rect x="38" y="58" width="84" height="248" rx="20" fill="url(#trimmerGrad)"/>
-            <rect x="42" y="62" width="76" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
-            <rect x="46" y="62" width="30" height="240" rx="8" fill="rgba(255,255,255,0.04)"/>
-            <!-- Center circle -->
-            <circle cx="80" cy="170" r="32" fill="rgba(0,0,0,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-            <text x="80" y="163" text-anchor="middle" font-family="Inter" font-weight="800" font-size="10" fill="rgba(26,110,255,0.9)">SABER</text>
-            <text x="80" y="175" text-anchor="middle" font-family="Inter" font-weight="500" font-size="7" fill="rgba(255,255,255,0.45)">DIGITAL BRUSHLESS</text>
-            <!-- Hex button glowing blue -->
-            <polygon points="80,220 93,227 93,241 80,248 67,241 67,227" fill="#0a3ab5"/>
-            <polygon points="80,223 90,229 90,239 80,245 70,239 70,229" fill="#1a6eff" opacity="0.8"/>
-            <circle cx="80" cy="234" r="5" fill="#4d9fff" opacity="0.6"/>
-            <!-- S|C watermark -->
-            <text x="80" y="290" text-anchor="middle" font-family="Inter" font-weight="900" font-size="14" fill="rgba(26,110,255,0.2)" letter-spacing="2">S|C</text>
-            <!-- Base -->
-            <ellipse cx="80" cy="322" rx="50" ry="22" fill="url(#baseGrad2)"/>
-            <text x="80" y="326" text-anchor="middle" font-family="Inter" font-weight="900" font-size="11" fill="#fff" letter-spacing="2">S|C</text>
-            <defs>
-              <linearGradient id="trimmerGrad" x1="38" y1="58" x2="122" y2="306" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#f2f2f2"/>
-                <stop offset="100%" stop-color="#d5d5d5"/>
-              </linearGradient>
-              <linearGradient id="baseGrad2" x1="30" y1="300" x2="130" y2="344" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#2a2a2a"/>
-                <stop offset="100%" stop-color="#111"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="rpm-badge blue-badge-pill">7.000 RPM</div>
+        <img src="images/trimmer.png" alt="S|C Saber Trimmer" class="product-photo" />
+        <div class="rpm-badge blue-text">7.000 RPM</div>
       </div>
     </div>
   </section>
@@ -404,64 +277,64 @@
 
       <h3 class="guards-subtitle">Clipper — 8 Kammaufsätze</h3>
       <div class="guards-grid">
-        <div class="guard-item" data-num="#0">
-          <div class="guard-bar" style="height:12px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:12px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#0</span>
             <span class="guard-mm">0,5 mm</span>
             <span class="guard-use">Skin Fade</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#1">
-          <div class="guard-bar" style="height:24px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:24px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#1</span>
             <span class="guard-mm">3 mm</span>
             <span class="guard-use">Kurz & sauber</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#1.5">
-          <div class="guard-bar" style="height:36px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:36px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#1,5</span>
             <span class="guard-mm">4,5 mm</span>
             <span class="guard-use">Classic Short</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#2">
-          <div class="guard-bar" style="height:48px; background: linear-gradient(to top, #b89040, #e0c070);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:48px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#2</span>
             <span class="guard-mm">6 mm</span>
             <span class="guard-use">Standard</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#3">
-          <div class="guard-bar" style="height:60px; background: linear-gradient(to top, #a88030, #d0b060);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:62px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#3</span>
             <span class="guard-mm">9 mm</span>
             <span class="guard-use">Medium Cut</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#4">
-          <div class="guard-bar" style="height:76px; background: linear-gradient(to top, #987020, #c0a050);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:78px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#4</span>
             <span class="guard-mm">12 mm</span>
             <span class="guard-use">Volle Länge</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#6">
-          <div class="guard-bar" style="height:94px; background: linear-gradient(to top, #886010, #b09040);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:96px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#6</span>
             <span class="guard-mm">19 mm</span>
             <span class="guard-use">Lang</span>
           </div>
         </div>
-        <div class="guard-item" data-num="#8">
-          <div class="guard-bar" style="height:114px; background: linear-gradient(to top, #705000, #a08020);"></div>
+        <div class="guard-item">
+          <div class="guard-bar" style="height:116px;"></div>
           <div class="guard-info">
             <span class="guard-nr">#8</span>
             <span class="guard-mm">25 mm</span>
@@ -473,8 +346,8 @@
       <h3 class="guards-subtitle" style="margin-top:64px;">Trimmer — T-Blade Aufsätze</h3>
       <div class="t-guards-grid">
         <div class="t-guard">
-          <div class="t-icon" style="background: rgba(26,110,255,0.15); border-color: rgba(26,110,255,0.3);">
-            <span style="color: #1a6eff;">∅</span>
+          <div class="t-icon" style="background:rgba(26,110,255,0.15);border-color:rgba(26,110,255,0.3);">
+            <span style="color:#1a6eff;">∅</span>
           </div>
           <div>
             <strong>Zero Gap</strong>
@@ -482,8 +355,8 @@
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-icon" style="background: rgba(26,110,255,0.1); border-color: rgba(26,110,255,0.2);">
-            <span style="color: #4d9fff;">T1</span>
+          <div class="t-icon" style="background:rgba(26,110,255,0.1);border-color:rgba(26,110,255,0.2);">
+            <span style="color:#4d9fff;">T1</span>
           </div>
           <div>
             <strong>#T1 — 1,5 mm</strong>
@@ -491,8 +364,8 @@
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-icon" style="background: rgba(26,110,255,0.07); border-color: rgba(26,110,255,0.15);">
-            <span style="color: #7bbfff;">T2</span>
+          <div class="t-icon" style="background:rgba(26,110,255,0.07);border-color:rgba(26,110,255,0.15);">
+            <span style="color:#7bbfff;">T2</span>
           </div>
           <div>
             <strong>#T2 — 3 mm</strong>
@@ -500,8 +373,8 @@
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-icon" style="background: rgba(26,110,255,0.05); border-color: rgba(26,110,255,0.1);">
-            <span style="color: #aadaff;">T3</span>
+          <div class="t-icon" style="background:rgba(26,110,255,0.05);border-color:rgba(26,110,255,0.1);">
+            <span style="color:#aadaff;">T3</span>
           </div>
           <div>
             <strong>#T3 — 4,5 mm</strong>
@@ -529,15 +402,19 @@
           <thead>
             <tr>
               <th></th>
-              <th class="th-clipper">
-                <span class="th-logo gold-text">S|C</span>
-                <span class="th-name">SABER II</span>
-                <span class="th-sub">Clipper</span>
+              <th>
+                <div class="th-clipper">
+                  <span class="th-logo gold-text">S|C</span>
+                  <span class="th-name">SABER II</span>
+                  <span class="th-sub">Clipper</span>
+                </div>
               </th>
-              <th class="th-trimmer">
-                <span class="th-logo blue-text">S|C</span>
-                <span class="th-name">SABER</span>
-                <span class="th-sub">Trimmer</span>
+              <th>
+                <div class="th-trimmer">
+                  <span class="th-logo blue-text">S|C</span>
+                  <span class="th-name">SABER</span>
+                  <span class="th-sub">Trimmer</span>
+                </div>
               </th>
             </tr>
           </thead>
@@ -618,20 +495,24 @@
     <div class="buy-bg"></div>
     <div class="container">
       <div class="buy-inner">
+        <div class="buy-products">
+          <img src="images/clipper.png" alt="Clipper" class="buy-img" />
+          <img src="images/trimmer.png" alt="Trimmer" class="buy-img" />
+        </div>
         <div class="buy-logo">S<span>|</span>C</div>
         <h2>Das perfekte Barber-Set.<br />Für professionelle Ergebnisse.</h2>
         <p>Saber II Clipper + Saber Trimmer + 2 Ladestationen + 12 Kammaufsätze</p>
         <div class="buy-features">
           <div class="buy-feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Kostenloser Versand ab 99€
           </div>
           <div class="buy-feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             2 Jahre Garantie
           </div>
           <div class="buy-feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             30 Tage Rückgabe
           </div>
         </div>
