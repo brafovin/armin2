@@ -3,482 +3,660 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>S|C – Saber II Clipper-Trimmer Set</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <title>S|C – Saber II Clipper & Trimmer Set</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">S<span>|</span>C</div>
+  <!-- ═══ NAV ═══ -->
+  <header class="nav-wrap" id="nav">
+    <nav>
+      <a href="#" class="nav-logo">S<span>|</span>C</a>
       <ul class="nav-links">
-        <li><a href="#overview">Überblick</a></li>
+        <li><a href="#hero">Überblick</a></li>
         <li><a href="#specs">Specs</a></li>
-        <li><a href="#attachments">Aufsätze</a></li>
+        <li><a href="#guards">Aufsätze</a></li>
         <li><a href="#compare">Vergleich</a></li>
       </ul>
-      <button class="btn-nav">Jetzt kaufen</button>
-    </div>
-  </nav>
+      <div class="nav-right">
+        <a href="#buy" class="btn-buy">Jetzt kaufen</a>
+      </div>
+      <button class="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="overview">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <span class="badge">Digital Brushless</span>
-      <h1>CLIPPER&#8209;TRIMMER<br /><span>SET</span></h1>
-      <p class="hero-sub">Das perfekte Duo für den professionellen Barber.<br />Präzision trifft auf rohe Power.</p>
-      <div class="hero-cta">
-        <button class="btn-primary">Set entdecken</button>
-        <button class="btn-ghost">Specs ansehen</button>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img
+        src="images/hero.jpg"
+        alt="S|C Saber II Clipper und Saber Trimmer Set"
+        class="hero-img"
+        id="heroImg"
+        onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';"
+      />
+      <!-- Fallback wenn kein Bild -->
+      <div class="hero-fallback" id="heroFallback">
+        <div class="fallback-logo">S<span>|</span>C</div>
+        <div class="fallback-products">
+          <div class="fallback-device">
+            <div class="fallback-blade"></div>
+            <div class="fallback-body clipper-body">
+              <span>SABER II</span>
+              <small>DIGITAL BRUSHLESS</small>
+            </div>
+            <div class="fallback-base"><span>S|C</span></div>
+          </div>
+          <div class="fallback-device">
+            <div class="fallback-tblade"></div>
+            <div class="fallback-body trimmer-body">
+              <div class="hex-btn"></div>
+              <span>SABER</span>
+              <small>DIGITAL BRUSHLESS</small>
+            </div>
+            <div class="fallback-base"><span>S|C</span></div>
+          </div>
+        </div>
+        <p class="fallback-hint">Bild: <code>images/hero.jpg</code> hinzufügen</p>
+      </div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span>StyleCraft Professional</span>
+      </div>
+      <h1>CLIPPER&#8209;TRIMMER<br /><span class="gold">SET</span></h1>
+      <p class="hero-desc">
+        Zwei Maschinen. Ein System. Unbegrenzte Präzision.<br />
+        Digital Brushless Motoren — die Wahl der Profis.
+      </p>
+      <div class="hero-pills">
+        <span class="pill">9.000 RPM Clipper</span>
+        <span class="pill pill-blue">7.000 RPM Trimmer</span>
+        <span class="pill">3h+ Akku</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#buy" class="btn-primary">Set kaufen</a>
+        <a href="#specs" class="btn-ghost">Specs ansehen ↓</a>
       </div>
     </div>
-    <div class="hero-products">
-      <div class="product-card-hero clipper-card">
-        <div class="product-label">SABER II</div>
-        <div class="product-icon clipper-icon">
-          <svg viewBox="0 0 120 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Blade top -->
-            <rect x="18" y="5" width="84" height="18" rx="3" fill="#1a1a1a"/>
-            <rect x="22" y="8" width="76" height="8" rx="2" fill="#2a2a2a"/>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ KEYLINE STATS ═══ -->
+  <div class="keyline" id="stats">
+    <div class="keyline-inner">
+      <div class="kl-item">
+        <strong>9.000</strong><span>RPM — Clipper</span>
+      </div>
+      <div class="kl-sep"></div>
+      <div class="kl-item">
+        <strong>7.000</strong><span>RPM — Trimmer</span>
+      </div>
+      <div class="kl-sep"></div>
+      <div class="kl-item">
+        <strong>3,5 h</strong><span>Akkulaufzeit</span>
+      </div>
+      <div class="kl-sep"></div>
+      <div class="kl-item">
+        <strong>90 Min</strong><span>Vollladen</span>
+      </div>
+      <div class="kl-sep"></div>
+      <div class="kl-item">
+        <strong>12×</strong><span>Aufsätze inklusive</span>
+      </div>
+      <div class="kl-sep"></div>
+      <div class="kl-item">
+        <strong>0 mm</strong><span>Zero Gap möglich</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PRODUCT SPLIT ═══ -->
+  <section class="split-section" id="specs">
+    <div class="split-label">
+      <span>Technische Spezifikationen</span>
+    </div>
+
+    <!-- CLIPPER -->
+    <div class="split-row">
+      <div class="split-visual clipper-visual reveal">
+        <div class="device-badge">Clipper</div>
+        <div class="device-glow gold-glow"></div>
+        <div class="device-frame">
+          <svg viewBox="0 0 200 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="device-svg">
+            <!-- Blade housing -->
+            <rect x="25" y="8" width="150" height="32" rx="6" fill="#1c1c1c"/>
+            <rect x="30" y="13" width="140" height="15" rx="4" fill="#252525"/>
             <!-- Blade teeth -->
-            <rect x="22" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="29" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="36" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="43" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="50" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="57" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="64" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="71" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="78" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="85" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <rect x="92" y="14" width="4" height="9" rx="1" fill="#111"/>
-            <!-- Motor window (amber) -->
-            <rect x="30" y="23" width="60" height="28" rx="4" fill="#8B6914" opacity="0.85"/>
-            <rect x="34" y="27" width="52" height="20" rx="3" fill="#B8860B" opacity="0.6"/>
+            <rect x="32" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="42" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="52" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="62" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="72" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="82" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="92" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="102" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="112" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="122" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="132" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="142" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="152" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <rect x="162" y="24" width="7" height="16" rx="2" fill="#0a0a0a"/>
+            <!-- Motor window amber -->
+            <rect x="42" y="40" width="116" height="50" rx="8" fill="#7a5a0a" opacity="0.9"/>
+            <rect x="48" y="46" width="104" height="38" rx="6" fill="#c8a032" opacity="0.3"/>
             <!-- Body -->
-            <rect x="20" y="51" width="80" height="130" rx="14" fill="#f0f0f0"/>
-            <rect x="24" y="55" width="72" height="6" rx="3" fill="#ddd"/>
-            <!-- Logo area -->
-            <circle cx="60" cy="95" r="22" fill="#e8e8e8" stroke="#ccc" stroke-width="1"/>
-            <text x="60" y="91" text-anchor="middle" font-size="7" fill="#555" font-family="Inter" font-weight="600">DIGITAL</text>
-            <text x="60" y="100" text-anchor="middle" font-size="7" fill="#555" font-family="Inter" font-weight="600">BRUSHLESS</text>
-            <!-- S|C text on body -->
-            <text x="60" y="150" text-anchor="middle" font-size="13" fill="#888" font-family="Inter" font-weight="700">S|C</text>
+            <rect x="30" y="90" width="140" height="230" rx="22" fill="url(#clipperGrad)"/>
+            <!-- Body highlight -->
+            <rect x="34" y="94" width="132" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+            <rect x="38" y="94" width="60" height="222" rx="10" fill="rgba(255,255,255,0.04)"/>
+            <!-- Center emblem circle -->
+            <circle cx="100" cy="180" r="36" fill="rgba(0,0,0,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+            <!-- Saber II text -->
+            <text x="100" y="172" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="rgba(200,169,75,0.9)">SABER II</text>
+            <text x="100" y="185" text-anchor="middle" font-family="Inter" font-weight="500" font-size="7.5" fill="rgba(255,255,255,0.45)">DIGITAL BRUSHLESS</text>
+            <!-- S|C watermark -->
+            <text x="100" y="250" text-anchor="middle" font-family="Inter" font-weight="900" font-size="18" fill="rgba(200,169,75,0.25)" letter-spacing="3">S|C</text>
             <!-- Taper lever -->
-            <rect x="12" y="130" width="10" height="30" rx="3" fill="#bbb"/>
-            <rect x="13" y="148" width="8" height="4" rx="2" fill="#999"/>
-            <!-- Power button area -->
-            <circle cx="60" cy="170" r="10" fill="#ddd" stroke="#ccc" stroke-width="1"/>
+            <rect x="16" y="215" width="16" height="50" rx="5" fill="#b0b0b0"/>
+            <rect x="17" y="238" width="14" height="7" rx="3.5" fill="#888"/>
+            <!-- LED row -->
+            <circle cx="86" cy="300" r="3" fill="#c8a94b"/>
+            <circle cx="96" cy="300" r="3" fill="#c8a94b" opacity="0.6"/>
+            <circle cx="106" cy="300" r="3" fill="#333"/>
+            <circle cx="116" cy="300" r="3" fill="#333"/>
             <!-- Base -->
-            <ellipse cx="60" cy="195" rx="40" ry="16" fill="#1a1a1a"/>
-            <text x="60" y="199" text-anchor="middle" font-size="9" fill="#fff" font-family="Inter" font-weight="700">S|C</text>
+            <ellipse cx="100" cy="335" rx="62" ry="26" fill="url(#baseGrad)"/>
+            <text x="100" y="339" text-anchor="middle" font-family="Inter" font-weight="900" font-size="13" fill="#fff" letter-spacing="2">S|C</text>
+            <defs>
+              <linearGradient id="clipperGrad" x1="30" y1="90" x2="170" y2="320" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#f2f2f2"/>
+                <stop offset="100%" stop-color="#d8d8d8"/>
+              </linearGradient>
+              <linearGradient id="baseGrad" x1="38" y1="310" x2="162" y2="360" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2a2a2a"/>
+                <stop offset="100%" stop-color="#111"/>
+              </linearGradient>
+            </defs>
           </svg>
         </div>
-        <div class="product-stat">9.000 RPM</div>
-        <div class="product-type">Clipper</div>
+        <div class="rpm-badge gold-badge">9.000 RPM</div>
       </div>
-      <div class="product-card-hero trimmer-card">
-        <div class="product-label">SABER</div>
-        <div class="product-icon trimmer-icon">
-          <svg viewBox="0 0 90 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- T-Blade top -->
-            <rect x="5" y="5" width="80" height="16" rx="3" fill="#1a1a1a"/>
-            <rect x="9" y="8" width="72" height="7" rx="2" fill="#2a2a2a"/>
-            <!-- Blade teeth -->
-            <rect x="10" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="15" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="20" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="25" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="30" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="35" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="40" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="45" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="50" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="55" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="60" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="65" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <rect x="70" y="13" width="3" height="8" rx="1" fill="#111"/>
-            <!-- Connector -->
-            <rect x="28" y="21" width="34" height="12" rx="2" fill="#1a1a1a"/>
+
+      <div class="split-specs reveal reveal-right">
+        <div class="spec-name">SABER II</div>
+        <div class="spec-tagline">Profi-Haarschneidemaschine</div>
+
+        <div class="spec-table">
+          <div class="st-row">
+            <span class="st-k">Motor</span>
+            <span class="st-v">Digital Brushless</span>
+          </div>
+          <div class="st-row accent-row">
+            <span class="st-k">Drehzahl</span>
+            <span class="st-v gold-text">9.000 RPM</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Klingenmaterial</span>
+            <span class="st-v">Carbonstahl / Titan</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Schneidweite</span>
+            <span class="st-v">50 mm breit</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Einstellbar</span>
+            <span class="st-v">0,5 mm – 2,0 mm</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Taper Lever</span>
+            <span class="st-v">Ja, stufenlos</span>
+          </div>
+          <div class="st-row accent-row">
+            <span class="st-k">Akkulaufzeit</span>
+            <span class="st-v gold-text">3,5 Stunden</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Akkukapazität</span>
+            <span class="st-v">Li-Ion 2.000 mAh</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Ladezeit</span>
+            <span class="st-v">~ 90 Minuten</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Ladestation</span>
+            <span class="st-v">Magnetisch, kabellos</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Geräuschpegel</span>
+            <span class="st-v">&lt; 55 dB</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Gewicht</span>
+            <span class="st-v">310 g</span>
+          </div>
+        </div>
+
+        <div class="rpm-bar-wrap">
+          <div class="rpm-bar-label">
+            <span>Leistung (RPM)</span>
+            <span class="gold-text">9.000 / 10.000</span>
+          </div>
+          <div class="rpm-bar">
+            <div class="rpm-fill gold-fill" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-divider"></div>
+
+    <!-- TRIMMER -->
+    <div class="split-row split-row-rev">
+      <div class="split-specs reveal reveal-left">
+        <div class="spec-name blue-text">SABER</div>
+        <div class="spec-tagline">Profi-Trimmer & Outliner</div>
+
+        <div class="spec-table">
+          <div class="st-row">
+            <span class="st-k">Motor</span>
+            <span class="st-v">Digital Brushless</span>
+          </div>
+          <div class="st-row accent-row">
+            <span class="st-k">Drehzahl</span>
+            <span class="st-v blue-text">7.000 RPM</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Klingentyp</span>
+            <span class="st-v">T-Blade DLC-Beschichtet</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Schneidbreite</span>
+            <span class="st-v">38 mm breit</span>
+          </div>
+          <div class="st-row accent-row">
+            <span class="st-k">Zero Gap</span>
+            <span class="st-v blue-text">0 mm möglich</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Schneidbereich</span>
+            <span class="st-v">0 mm – 0,5 mm</span>
+          </div>
+          <div class="st-row accent-row">
+            <span class="st-k">Akkulaufzeit</span>
+            <span class="st-v blue-text">3 Stunden</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Akkukapazität</span>
+            <span class="st-v">Li-Ion 1.500 mAh</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Ladezeit</span>
+            <span class="st-v">~ 90 Minuten</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Ladestation</span>
+            <span class="st-v">Magnetisch, kabellos</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Power-Taste</span>
+            <span class="st-v">Hex-LED (Blau leuchtend)</span>
+          </div>
+          <div class="st-row">
+            <span class="st-k">Gewicht</span>
+            <span class="st-v">240 g</span>
+          </div>
+        </div>
+
+        <div class="rpm-bar-wrap">
+          <div class="rpm-bar-label">
+            <span>Leistung (RPM)</span>
+            <span class="blue-text">7.000 / 10.000</span>
+          </div>
+          <div class="rpm-bar">
+            <div class="rpm-fill blue-fill" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-visual trimmer-visual reveal reveal-right">
+        <div class="device-badge blue-badge">Trimmer</div>
+        <div class="device-glow blue-glow"></div>
+        <div class="device-frame">
+          <svg viewBox="0 0 160 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="device-svg trimmer-svg">
+            <!-- T-Blade wide top -->
+            <rect x="5" y="8" width="150" height="28" rx="5" fill="#1c1c1c"/>
+            <rect x="10" y="13" width="140" height="12" rx="3" fill="#252525"/>
+            <!-- T-Blade teeth -->
+            <rect x="11" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="19" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="27" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="35" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="43" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="51" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="59" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="67" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="75" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="83" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="91" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="99" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="107" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="115" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="123" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="131" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <rect x="139" y="21" width="5" height="15" rx="1.5" fill="#0a0a0a"/>
+            <!-- Neck connector -->
+            <rect x="45" y="36" width="70" height="22" rx="4" fill="#1c1c1c"/>
             <!-- Body -->
-            <rect x="20" y="33" width="50" height="140" rx="12" fill="#f0f0f0"/>
-            <rect x="24" y="37" width="42" height="5" rx="2.5" fill="#ddd"/>
-            <!-- Logo area -->
-            <circle cx="45" cy="80" r="18" fill="#e8e8e8" stroke="#ccc" stroke-width="1"/>
-            <text x="45" y="76" text-anchor="middle" font-size="6" fill="#555" font-family="Inter" font-weight="600">DIGITAL</text>
-            <text x="45" y="84" text-anchor="middle" font-size="6" fill="#555" font-family="Inter" font-weight="600">BRUSHLESS</text>
-            <!-- Hex power button (blue glowing) -->
-            <polygon points="45,115 54,120 54,130 45,135 36,130 36,120" fill="#1a6eff"/>
-            <polygon points="45,118 52,122 52,128 45,132 38,128 38,122" fill="#4d9fff" opacity="0.7"/>
-            <!-- S|C text -->
-            <text x="45" y="158" text-anchor="middle" font-size="10" fill="#888" font-family="Inter" font-weight="700">S|C</text>
+            <rect x="38" y="58" width="84" height="248" rx="20" fill="url(#trimmerGrad)"/>
+            <rect x="42" y="62" width="76" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+            <rect x="46" y="62" width="30" height="240" rx="8" fill="rgba(255,255,255,0.04)"/>
+            <!-- Center circle -->
+            <circle cx="80" cy="170" r="32" fill="rgba(0,0,0,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+            <text x="80" y="163" text-anchor="middle" font-family="Inter" font-weight="800" font-size="10" fill="rgba(26,110,255,0.9)">SABER</text>
+            <text x="80" y="175" text-anchor="middle" font-family="Inter" font-weight="500" font-size="7" fill="rgba(255,255,255,0.45)">DIGITAL BRUSHLESS</text>
+            <!-- Hex button glowing blue -->
+            <polygon points="80,220 93,227 93,241 80,248 67,241 67,227" fill="#0a3ab5"/>
+            <polygon points="80,223 90,229 90,239 80,245 70,239 70,229" fill="#1a6eff" opacity="0.8"/>
+            <circle cx="80" cy="234" r="5" fill="#4d9fff" opacity="0.6"/>
+            <!-- S|C watermark -->
+            <text x="80" y="290" text-anchor="middle" font-family="Inter" font-weight="900" font-size="14" fill="rgba(26,110,255,0.2)" letter-spacing="2">S|C</text>
             <!-- Base -->
-            <ellipse cx="45" cy="185" rx="32" ry="13" fill="#1a1a1a"/>
-            <text x="45" y="189" text-anchor="middle" font-size="8" fill="#fff" font-family="Inter" font-weight="700">S|C</text>
+            <ellipse cx="80" cy="322" rx="50" ry="22" fill="url(#baseGrad2)"/>
+            <text x="80" y="326" text-anchor="middle" font-family="Inter" font-weight="900" font-size="11" fill="#fff" letter-spacing="2">S|C</text>
+            <defs>
+              <linearGradient id="trimmerGrad" x1="38" y1="58" x2="122" y2="306" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#f2f2f2"/>
+                <stop offset="100%" stop-color="#d5d5d5"/>
+              </linearGradient>
+              <linearGradient id="baseGrad2" x1="30" y1="300" x2="130" y2="344" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2a2a2a"/>
+                <stop offset="100%" stop-color="#111"/>
+              </linearGradient>
+            </defs>
           </svg>
         </div>
-        <div class="product-stat">7.000 RPM</div>
-        <div class="product-type">Trimmer</div>
+        <div class="rpm-badge blue-badge-pill">7.000 RPM</div>
       </div>
     </div>
   </section>
 
-  <!-- STATS BAR -->
-  <section class="stats-bar">
-    <div class="stat-item">
-      <span class="stat-num">9.000</span>
-      <span class="stat-label">RPM Clipper</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num">7.000</span>
-      <span class="stat-label">RPM Trimmer</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num">3h+</span>
-      <span class="stat-label">Akkulaufzeit</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num">90 Min</span>
-      <span class="stat-label">Ladezeit</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num">8</span>
-      <span class="stat-label">Aufsätze inkl.</span>
-    </div>
-  </section>
+  <!-- ═══ GUARDS / ATTACHMENTS ═══ -->
+  <section class="guards-section" id="guards">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Zubehör & Aufsätze</span>
+        <h2>Präzise in jedem<br /><em>Millimeter</em></h2>
+        <p>Das Set kommt mit 12 Kammaufsätzen — von Zero Gap bis 25 mm Länge.</p>
+      </div>
 
-  <!-- SPECS -->
-  <section class="specs-section" id="specs">
-    <div class="section-header">
-      <span class="section-badge">Technische Details</span>
-      <h2>Kompromisslose<br /><em>Performance</em></h2>
-      <p>Beide Geräte sind mit digitalen bürstenlosen Motoren ausgestattet – die Wahl der Profis weltweit.</p>
-    </div>
-
-    <div class="specs-grid">
-      <!-- CLIPPER -->
-      <div class="spec-card">
-        <div class="spec-card-header">
-          <div class="spec-logo">S|C</div>
-          <div>
-            <div class="spec-title">SABER II</div>
-            <div class="spec-subtitle">Profi-Haarschneidemaschine</div>
+      <h3 class="guards-subtitle">Clipper — 8 Kammaufsätze</h3>
+      <div class="guards-grid">
+        <div class="guard-item" data-num="#0">
+          <div class="guard-bar" style="height:12px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#0</span>
+            <span class="guard-mm">0,5 mm</span>
+            <span class="guard-use">Skin Fade</span>
           </div>
         </div>
-        <div class="spec-rows">
-          <div class="spec-row">
-            <span class="spec-key">Motor</span>
-            <span class="spec-val">Digital Brushless</span>
+        <div class="guard-item" data-num="#1">
+          <div class="guard-bar" style="height:24px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#1</span>
+            <span class="guard-mm">3 mm</span>
+            <span class="guard-use">Kurz & sauber</span>
           </div>
-          <div class="spec-row highlight">
-            <span class="spec-key">Drehzahl (RPM)</span>
-            <span class="spec-val rpm">9.000 RPM</span>
+        </div>
+        <div class="guard-item" data-num="#1.5">
+          <div class="guard-bar" style="height:36px; background: linear-gradient(to top, #c8a94b, #f0d080);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#1,5</span>
+            <span class="guard-mm">4,5 mm</span>
+            <span class="guard-use">Classic Short</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-key">Klingenmaterial</span>
-            <span class="spec-val">Carbonstahl / Titan</span>
+        </div>
+        <div class="guard-item" data-num="#2">
+          <div class="guard-bar" style="height:48px; background: linear-gradient(to top, #b89040, #e0c070);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#2</span>
+            <span class="guard-mm">6 mm</span>
+            <span class="guard-use">Standard</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-key">Schneidweite</span>
-            <span class="spec-val">0,5 – 2,0 mm (verstellbar)</span>
+        </div>
+        <div class="guard-item" data-num="#3">
+          <div class="guard-bar" style="height:60px; background: linear-gradient(to top, #a88030, #d0b060);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#3</span>
+            <span class="guard-mm">9 mm</span>
+            <span class="guard-use">Medium Cut</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-key">Akkutyp</span>
-            <span class="spec-val">Li-Ion 2.000 mAh</span>
+        </div>
+        <div class="guard-item" data-num="#4">
+          <div class="guard-bar" style="height:76px; background: linear-gradient(to top, #987020, #c0a050);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#4</span>
+            <span class="guard-mm">12 mm</span>
+            <span class="guard-use">Volle Länge</span>
           </div>
-          <div class="spec-row highlight">
-            <span class="spec-key">Akkulaufzeit</span>
-            <span class="spec-val rpm">bis zu 3,5 Stunden</span>
+        </div>
+        <div class="guard-item" data-num="#6">
+          <div class="guard-bar" style="height:94px; background: linear-gradient(to top, #886010, #b09040);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#6</span>
+            <span class="guard-mm">19 mm</span>
+            <span class="guard-use">Lang</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-key">Ladezeit</span>
-            <span class="spec-val">ca. 90 Minuten</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Lademethode</span>
-            <span class="spec-val">Magnetische Ladestation</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Taper-Lever</span>
-            <span class="spec-val">Ja, stufenlos</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Geräuschpegel</span>
-            <span class="spec-val">unter 55 dB</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Gewicht</span>
-            <span class="spec-val">310 g</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Kabellos</span>
-            <span class="spec-val">Ja</span>
+        </div>
+        <div class="guard-item" data-num="#8">
+          <div class="guard-bar" style="height:114px; background: linear-gradient(to top, #705000, #a08020);"></div>
+          <div class="guard-info">
+            <span class="guard-nr">#8</span>
+            <span class="guard-mm">25 mm</span>
+            <span class="guard-use">Maximum</span>
           </div>
         </div>
       </div>
 
-      <!-- TRIMMER -->
-      <div class="spec-card trimmer-spec">
-        <div class="spec-card-header">
-          <div class="spec-logo">S|C</div>
-          <div>
-            <div class="spec-title">SABER</div>
-            <div class="spec-subtitle">Profi-Trimmer / Outliner</div>
-          </div>
-        </div>
-        <div class="spec-rows">
-          <div class="spec-row">
-            <span class="spec-key">Motor</span>
-            <span class="spec-val">Digital Brushless</span>
-          </div>
-          <div class="spec-row highlight">
-            <span class="spec-key">Drehzahl (RPM)</span>
-            <span class="spec-val rpm blue">7.000 RPM</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Klingenmaterial</span>
-            <span class="spec-val">Karbonstahl DLC-beschichtet</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Klingentyp</span>
-            <span class="spec-val">T-Blade (Zero Gap möglich)</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Schneidweite</span>
-            <span class="spec-val">0 mm (Zero Gap) – 0,5 mm</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Akkutyp</span>
-            <span class="spec-val">Li-Ion 1.500 mAh</span>
-          </div>
-          <div class="spec-row highlight">
-            <span class="spec-key">Akkulaufzeit</span>
-            <span class="spec-val rpm blue">bis zu 3 Stunden</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Ladezeit</span>
-            <span class="spec-val">ca. 90 Minuten</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Lademethode</span>
-            <span class="spec-key-val">Magnetische Ladestation</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Power-LED</span>
-            <span class="spec-val">Hexagon Blau-LED</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Gewicht</span>
-            <span class="spec-val">240 g</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Kabellos</span>
-            <span class="spec-val">Ja</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ATTACHMENTS / GUARDS -->
-  <section class="attachments-section" id="attachments">
-    <div class="section-header">
-      <span class="section-badge">Aufsätze & Aufsteckdüsen</span>
-      <h2>8 Kammaufsätze<br /><em>inklusive</em></h2>
-      <p>Von Null bis zur gewünschten Länge – präzise in jedem Millimeter.</p>
-    </div>
-
-    <div class="guards-grid">
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 30px; background: linear-gradient(135deg, #667eea, #764ba2);"></div>
-        <div class="guard-mm">#0</div>
-        <div class="guard-size">0,5 mm</div>
-        <div class="guard-desc">Skin Fade / Null-Schnitt</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 40px; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
-        <div class="guard-mm">#1</div>
-        <div class="guard-size">3 mm</div>
-        <div class="guard-desc">Kurz & sauber</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 50px; background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
-        <div class="guard-mm">#1,5</div>
-        <div class="guard-size">4,5 mm</div>
-        <div class="guard-desc">Classic Short</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 60px; background: linear-gradient(135deg, #43e97b, #38f9d7);"></div>
-        <div class="guard-mm">#2</div>
-        <div class="guard-size">6 mm</div>
-        <div class="guard-desc">Standard Länge</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 75px; background: linear-gradient(135deg, #fa709a, #fee140);"></div>
-        <div class="guard-mm">#3</div>
-        <div class="guard-size">9 mm</div>
-        <div class="guard-desc">Medium Cut</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 90px; background: linear-gradient(135deg, #a18cd1, #fbc2eb);"></div>
-        <div class="guard-mm">#4</div>
-        <div class="guard-size">12 mm</div>
-        <div class="guard-desc">Volle Länge</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 105px; background: linear-gradient(135deg, #fda085, #f6d365);"></div>
-        <div class="guard-mm">#6</div>
-        <div class="guard-size">19 mm</div>
-        <div class="guard-desc">Lang & strukturiert</div>
-      </div>
-      <div class="guard-card">
-        <div class="guard-visual" style="height: 120px; background: linear-gradient(135deg, #30cfd0, #667eea);"></div>
-        <div class="guard-mm">#8</div>
-        <div class="guard-size">25 mm</div>
-        <div class="guard-desc">Maximale Länge</div>
-      </div>
-    </div>
-
-    <!-- Trimmer guards -->
-    <div class="trimmer-guards">
-      <h3>Trimmer T-Blade Aufsätze</h3>
+      <h3 class="guards-subtitle" style="margin-top:64px;">Trimmer — T-Blade Aufsätze</h3>
       <div class="t-guards-grid">
         <div class="t-guard">
-          <div class="t-guard-dot" style="background:#1a6eff;"></div>
-          <div class="t-guard-info">
+          <div class="t-icon" style="background: rgba(26,110,255,0.15); border-color: rgba(26,110,255,0.3);">
+            <span style="color: #1a6eff;">∅</span>
+          </div>
+          <div>
             <strong>Zero Gap</strong>
-            <span>0 mm – direkter Hautkontakt</span>
+            <span>0 mm — direkter Hautkontakt, schärfste Konturlinie</span>
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-guard-dot" style="background:#4d9fff;"></div>
-          <div class="t-guard-info">
-            <strong>#T1</strong>
-            <span>1,5 mm – scharfe Kontur</span>
+          <div class="t-icon" style="background: rgba(26,110,255,0.1); border-color: rgba(26,110,255,0.2);">
+            <span style="color: #4d9fff;">T1</span>
+          </div>
+          <div>
+            <strong>#T1 — 1,5 mm</strong>
+            <span>Scharfe Outliner-Kante, perfekt für Hairlines</span>
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-guard-dot" style="background:#7bbfff;"></div>
-          <div class="t-guard-info">
-            <strong>#T2</strong>
-            <span>3 mm – weiche Linie</span>
+          <div class="t-icon" style="background: rgba(26,110,255,0.07); border-color: rgba(26,110,255,0.15);">
+            <span style="color: #7bbfff;">T2</span>
+          </div>
+          <div>
+            <strong>#T2 — 3 mm</strong>
+            <span>Weiche Linie, ideal für Bartformen</span>
           </div>
         </div>
         <div class="t-guard">
-          <div class="t-guard-dot" style="background:#aadaff;"></div>
-          <div class="t-guard-info">
-            <strong>#T3</strong>
-            <span>4,5 mm – Bart-Styling</span>
+          <div class="t-icon" style="background: rgba(26,110,255,0.05); border-color: rgba(26,110,255,0.1);">
+            <span style="color: #aadaff;">T3</span>
+          </div>
+          <div>
+            <strong>#T3 — 4,5 mm</strong>
+            <span>Bart-Styling, Volumen-Kontur</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMPARE TABLE -->
+  <!-- ═══ COMPARE ═══ -->
   <section class="compare-section" id="compare">
-    <div class="section-header">
-      <span class="section-badge">Direktvergleich</span>
-      <h2>Clipper vs.<br /><em>Trimmer</em></h2>
-    </div>
-    <div class="compare-wrapper">
-      <table class="compare-table">
-        <thead>
-          <tr>
-            <th>Merkmal</th>
-            <th class="col-clipper">SABER II Clipper</th>
-            <th class="col-trimmer">SABER Trimmer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Motor</td>
-            <td>Digital Brushless</td>
-            <td>Digital Brushless</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>RPM</td>
-            <td><strong>9.000 RPM</strong></td>
-            <td><strong>7.000 RPM</strong></td>
-          </tr>
-          <tr>
-            <td>Klingentyp</td>
-            <td>Standard / Fade Blade</td>
-            <td>T-Blade (Zero Gap)</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>Schneidbreite</td>
-            <td>50 mm</td>
-            <td>38 mm</td>
-          </tr>
-          <tr>
-            <td>Akku</td>
-            <td>2.000 mAh</td>
-            <td>1.500 mAh</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>Laufzeit</td>
-            <td>3,5 Stunden</td>
-            <td>3 Stunden</td>
-          </tr>
-          <tr>
-            <td>Ladestation</td>
-            <td>Ja (Magnetisch)</td>
-            <td>Ja (Magnetisch)</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>Taper-Lever</td>
-            <td>Ja</td>
-            <td>Nein</td>
-          </tr>
-          <tr>
-            <td>Einsatzgebiet</td>
-            <td>Haarschnitt, Fade, Blends</td>
-            <td>Konturen, Bartpflege, Lines</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>Gewicht</td>
-            <td>310 g</td>
-            <td>240 g</td>
-          </tr>
-          <tr>
-            <td>LED-Anzeige</td>
-            <td>Akku-LED</td>
-            <td>Hex-LED (Blau)</td>
-          </tr>
-          <tr class="tr-alt">
-            <td>Aufsätze inkl.</td>
-            <td>8 Kammaufsätze</td>
-            <td>4 T-Kammaufsätze</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Direktvergleich</span>
+        <h2>Clipper vs.<br /><em>Trimmer</em></h2>
+      </div>
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <colgroup>
+            <col style="width:34%"/>
+            <col style="width:33%"/>
+            <col style="width:33%"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <th></th>
+              <th class="th-clipper">
+                <span class="th-logo gold-text">S|C</span>
+                <span class="th-name">SABER II</span>
+                <span class="th-sub">Clipper</span>
+              </th>
+              <th class="th-trimmer">
+                <span class="th-logo blue-text">S|C</span>
+                <span class="th-name">SABER</span>
+                <span class="th-sub">Trimmer</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Motor</td>
+              <td>Digital Brushless</td>
+              <td>Digital Brushless</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Drehzahl</td>
+              <td class="gold-text fw">9.000 RPM</td>
+              <td class="blue-text fw">7.000 RPM</td>
+            </tr>
+            <tr>
+              <td>Klingentyp</td>
+              <td>Standard Fade Blade</td>
+              <td>T-Blade (DLC)</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Schneidbreite</td>
+              <td>50 mm</td>
+              <td>38 mm</td>
+            </tr>
+            <tr>
+              <td>Zero Gap</td>
+              <td>—</td>
+              <td class="blue-text fw">✓ möglich</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Taper Lever</td>
+              <td class="gold-text fw">✓ stufenlos</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Akku</td>
+              <td>2.000 mAh Li-Ion</td>
+              <td>1.500 mAh Li-Ion</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Laufzeit</td>
+              <td class="gold-text fw">3,5 Stunden</td>
+              <td class="blue-text fw">3 Stunden</td>
+            </tr>
+            <tr>
+              <td>Ladestation</td>
+              <td>Magnetisch</td>
+              <td>Magnetisch</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Gewicht</td>
+              <td>310 g</td>
+              <td>240 g</td>
+            </tr>
+            <tr>
+              <td>LED-Anzeige</td>
+              <td>4× Akku-LED</td>
+              <td>Hex-LED Blau</td>
+            </tr>
+            <tr class="row-hl">
+              <td>Kammaufsätze</td>
+              <td>8× (0,5 – 25 mm)</td>
+              <td>4× T-Blade</td>
+            </tr>
+            <tr>
+              <td>Einsatzgebiet</td>
+              <td>Haarschnitt, Fades, Blends</td>
+              <td>Kontur, Bart, Outlining</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
-  <!-- CTA FOOTER -->
-  <section class="cta-section">
-    <div class="cta-inner">
-      <div class="cta-logo">S<span>|</span>C</div>
-      <h2>Das komplette Set.<br />Für professionelle Ergebnisse.</h2>
-      <p>Clipper + Trimmer + 2 Ladestationen + 12 Aufsätze – alles in einem Paket.</p>
-      <button class="btn-primary btn-large">Set jetzt kaufen</button>
+  <!-- ═══ BUY CTA ═══ -->
+  <section class="buy-section" id="buy">
+    <div class="buy-bg"></div>
+    <div class="container">
+      <div class="buy-inner">
+        <div class="buy-logo">S<span>|</span>C</div>
+        <h2>Das perfekte Barber-Set.<br />Für professionelle Ergebnisse.</h2>
+        <p>Saber II Clipper + Saber Trimmer + 2 Ladestationen + 12 Kammaufsätze</p>
+        <div class="buy-features">
+          <div class="buy-feat">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Kostenloser Versand ab 99€
+          </div>
+          <div class="buy-feat">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            2 Jahre Garantie
+          </div>
+          <div class="buy-feat">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c8a94b" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#c8a94b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            30 Tage Rückgabe
+          </div>
+        </div>
+        <a href="#" class="btn-primary btn-xl">Set jetzt kaufen</a>
+      </div>
     </div>
   </section>
 
+  <!-- ═══ FOOTER ═══ -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">S<span>|</span>C</div>
-      <p>StyleCraft Professional &copy; 2025. Alle Rechte vorbehalten.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">S<span>|</span>C</span>
+        <span>StyleCraft Professional</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Support</a>
+        <a href="#">Händler</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 StyleCraft. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
